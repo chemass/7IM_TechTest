@@ -1,0 +1,6 @@
+@_7IM_TechTest_HostAddress = http://localhost:5098
+
+GET {{_7IM_TechTest_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
