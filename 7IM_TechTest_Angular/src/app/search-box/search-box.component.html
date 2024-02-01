@@ -1,0 +1,9 @@
+<form #searchForm="ngForm" (ngSubmit)="btnClick(searchTerm.value)">
+  <input #searchTerm="ngModel" name="searchTerm" [(ngModel)]="searchText" type="search" placeholder="search" required minlength="1" />
+  <button type="submit" [disabled]="searchTerm.invalid">Search</button>
+  <div *ngIf="searchTerm.invalid && (searchTerm.dirty || searchTerm.touched)" class="alert">
+    <ul style="list-style-image: none;">
+      <li *ngFor="let error of getErrors(searchTerm.errors)">{{error}}</li>
+    </ul>
+  </div>
+</form>
