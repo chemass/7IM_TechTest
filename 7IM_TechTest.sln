@@ -11,11 +11,12 @@ Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "7IM_TechTest_Angular", "7IM
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5C6E1027-8D9A-4B03-ACC0-A68734F4FC05}"
 	ProjectSection(SolutionItems) = preProject
+		readme.md = readme.md
 		start_backend.bat = start_backend.bat
 		start_frontend.bat = start_frontend.bat
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechTest.IntegrationTests", "TechTest.IntegrationTests\TechTest.IntegrationTests.csproj", "{0A037D81-FA9C-4110-A827-B72B86C7C60D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechTest.IntegrationTests", "TechTest.IntegrationTests\TechTest.IntegrationTests.csproj", "{0A037D81-FA9C-4110-A827-B72B86C7C60D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
