@@ -1,6 +1,8 @@
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { SearchBoxComponent } from './search-box/search-box.component';
+import { PersonCardComponent } from './person-card/person-card.component';
 
 describe('AppComponent', () => {
   let component: AppComponent;
@@ -10,7 +12,7 @@ describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [AppComponent],
-      imports: [HttpClientTestingModule]
+      imports: [HttpClientTestingModule, SearchBoxComponent]
     }).compileComponents();
   });
 
@@ -34,10 +36,10 @@ describe('AppComponent', () => {
       { id: 2, firstName: "Ford", lastName: "Prefect", email: "froody.dude@whereismytowel.net", gender: "Male" },
     ];
 
-    component.doSearch();
+    component.doSearch("whereismytowel");
 
-    const req = httpMock.expectOne('/search');
-    expect(req.request.method).toEqual('POST');
+    const req = httpMock.expectOne('/search/whereismytowel');
+    expect(req.request.method).toEqual('GET');
     req.flush(mockPeople);
 
     expect(component.searchResults).toEqual(mockPeople);

@@ -1,4 +1,6 @@
 ﻿
+using _7IM_TechTest.Models;
+
 namespace _7IM_TechTest.Repositories
 {
     public interface IPersonRepository

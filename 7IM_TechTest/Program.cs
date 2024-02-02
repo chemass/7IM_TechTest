@@ -1,5 +1,4 @@
 using _7IM_TechTest.Repositories;
-using Microsoft.AspNetCore.Mvc;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,7 +22,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapGet("/search/{searchTerm:alpha}", async (string? searchTerm, IPersonRepository repo) =>
+app.MapGet("/search/{searchTerm}", async (string? searchTerm, IPersonRepository repo) =>
 {
     if (string.IsNullOrWhiteSpace(searchTerm))
         return Results.ValidationProblem(new Dictionary<string, string[]>
@@ -38,3 +37,8 @@ app.MapGet("/search/{searchTerm:alpha}", async (string? searchTerm, IPersonRepos
 .ProducesValidationProblem();
 
 app.Run();
+
+/// <summary>
+/// This is for testing purposes only.
+/// </summary>
+public partial class Program { }

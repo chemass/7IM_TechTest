@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿using _7IM_TechTest.Models;
+using System.Text.Json;
 
 namespace _7IM_TechTest.Repositories
 {

@@ -1,27 +1,8 @@
-# 7IMTechTestAngular
+# Angular project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.2.
+Simple angular project to query and display results from the backend project.
+use 'ng serve' or the provided '..\start_frontend.bat' file to start. The backend application must be running.
 
-## Development server
+No real styling has been attempted, as most of my designs will make your eyes bleed! A modicum was done in the person card component to show that I understand the concept.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Some simple tests are included, and can be run using 'ng test'. Having not done any Angular work for several years, I've again simply shown that I understand the concepts around testing of components without attempting to provide a full suite of tests to exhaustively test all aspects.

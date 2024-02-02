@@ -1,3 +1,4 @@
+using _7IM_TechTest.Models;
 using _7IM_TechTest.Repositories;
 
 namespace TechTest.UnitTests

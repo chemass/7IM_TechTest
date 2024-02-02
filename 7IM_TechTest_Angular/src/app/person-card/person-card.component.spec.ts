@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SearchBoxComponent } from './search-box.component';
+import { PersonCardComponent } from './person-card.component';
 
-describe('SearchBoxComponent', () => {
-  let component: SearchBoxComponent;
-  let fixture: ComponentFixture<SearchBoxComponent>;
+describe('PersonCardComponent', () => {
+  let component: PersonCardComponent;
+  let fixture: ComponentFixture<PersonCardComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SearchBoxComponent]
+      declarations: [PersonCardComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(SearchBoxComponent);
+    fixture = TestBed.createComponent(PersonCardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,13 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-
-interface Person {
-  id: number;
-  firstName: string;
-  lastName: string;
-  email: string;
-  gender: string;
-}
+import { Person } from './Person';
 
 @Component({
   selector: 'app-root',
