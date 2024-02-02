@@ -10,7 +10,7 @@ All tests can be run directly in visual studio, or by using 'dotnet test' or 'ng
 
 I decided to use a minimal api endpoint with a GET request for the search endpoint.
 Given the requirements, this seemed the most sensible approach, without unnecessarily overcomplicating anything.
-It shows the use of DI and some basic validation without bringing in any other libraries such as FlurntValidation etc.
+It shows the use of DI and some basic validation without bringing in any other libraries such as FluentValidation etc.
 
 The data repository simply caches the data on first request. Adding anything further here seemed pointless.
 
